@@ -4,6 +4,10 @@ describe('Split Array function', function() {
   });
 
   it('is able to split arrays until each array has a length of 1', function() {
-    expect( split([3, 6, 2, 7, 9, 1, 8, 5])).toEqual([[3], [6], [2], [7], [9], [1], [8], [5]])
+    expect( split([3, 6, 2, 7, 9, 1, 8, 5])).toEqual([[3, 6, 2, 7], [9, 1, 8, 5]])
+  });
+
+  it('is able to split arrays with an odd length', function() {
+    expect( split([3, 6, 2, 7, 9, 1, 8, 5, 4])).toEqual([[3, 6, 2, 7], [9, 1, 8, 5, 4]])
   });
 });

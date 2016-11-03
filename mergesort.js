@@ -3,16 +3,27 @@ function split(wholeArray) {
 	var firstHalf = wholeArray.slice(0,wholeArray.length/2);
 	var secondHalf = wholeArray.slice(wholeArray.length/2);
 
-	if (firstHalf.length === 1 && secondHalf.length === 1) {
-		return [firstHalf, secondHalf];
-	}
+	// console.log(firstHalf, secondHalf);
 
-	if (firstHalf.length > 1) {
-		firstHalf = firstHalf.concat(split(firstHalf));
-	}
+	// if (firstHalf.length === 1 && secondHalf.length === 1) {
+	// 	return [firstHalf, secondHalf];
+	// }
 
-	if (secondHalf.length > 1) {
-		secondHalf = secondHalf.concat(split(secondHalf));
-	}
-	// console.log("firstHalf" ${firstHalf}, "secondHalf" ${secondHalf});
+	// if (firstHalf.length > 1) {
+	// 	firstHalf = split(firstHalf);
+	// }
+
+	// if (secondHalf.length > 1) {
+	// 	secondHalf = split(secondHalf);
+	// }
+	
+	return [firstHalf, secondHalf];
+}
+
+function merge(arr1, arr2){
+	var mergedArr = [];
+
+	for(var i=0; )
+
+	return mergedArr;
 }
