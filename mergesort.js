@@ -30,8 +30,8 @@ function mergeSort (arr) {
 
 	//BASE CASE:
 	if (firstHalf.length === 1 && secondHalf.length === 1) {
-	      sortedArr = sortedArr.concat(merge(firstHalf, secondHalf));
-	 }
+	  sortedArr = sortedArr.concat(merge(firstHalf, secondHalf));
+	}
 
 	//  if (firstHalf.length > 1) {
 	//      firstHalf = split(firstHalf);
