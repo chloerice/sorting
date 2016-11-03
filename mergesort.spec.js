@@ -11,3 +11,9 @@ describe('Split Array function', function() {
     expect( split([3, 6, 2, 7, 9, 1, 8, 5, 4])).toEqual([[3, 6, 2, 7], [9, 1, 8, 5, 4]])
   });
 });
+
+describe('Merge Sort', function(){
+  it('is able to merge two sorted arrays into one sorted array', function(){
+    expect().toEqual()
+  });
+});
