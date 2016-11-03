@@ -26,21 +26,11 @@ function mergeSort (arr) {
 	var splitArr = split(arr);
 	var firstHalf = splitArr[0];
 	var secondHalf = splitArr[1];
-	var sortedArr = [];
 
 	//BASE CASE:
-	if (firstHalf.length === 1 && secondHalf.length === 1) {
-	  sortedArr = sortedArr.concat(merge(firstHalf, secondHalf));
+	if (arr.length < 2) {
+		return arr;
 	}
 
-	//  if (firstHalf.length > 1) {
-	//      firstHalf = split(firstHalf);
-	//  }
-	 //
-	//  if (secondHalf.length > 1) {
-	//      secondHalf = split(secondHalf);
-	//  }
-
-
-	return sortedArr;
+	return merge(mergeSort(firstHalf), mergeSort(secondHalf));
 }
